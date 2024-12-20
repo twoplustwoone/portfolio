@@ -4,7 +4,6 @@ env:
   GITHUB_USERNAME: ${{ github.repository_owner }}
   REACT_APP_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This is automatically set by Github Actions
   USE_GITHUB_DATA: "true"
-  MEDIUM_USERNAME: "saadpasta" # Change this to your medium username
 
 on:
   push:
@@ -18,8 +17,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-        with:
-          persist-credentials: false
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
@@ -35,6 +32,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }} # This is provided by GitHub.
-          publish_dir: build # The folder the action should deploy.
-          cname: twoplustwoone.dev
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          cname: splittr.twoplustwoone.dev
