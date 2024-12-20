@@ -171,53 +171,82 @@ const workExperiences = {
       company: "Salesforce",
       companylogo: require("./assets/images/salesforceLogo.png"),
       date: "Feb 2024 - Dec 2024",
-      // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      desc: "Developed and optimized user-focused features for Einstein Studio, integrating cutting-edge AI solutions and enhancing performance for large-scale datasets.",
       descBullets: [
-        // "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        // "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Designed and implemented core UI features for Einstein Studio using JavaScript, LWC, and Redux.",
+        "Delivered the BYOLLM project on schedule, integrating providers like Azure OpenAI, OpenAI, and Vertex AI.",
+        "Improved large dataset performance with advanced pagination techniques."
       ]
     },
     {
       role: "Senior Software Engineer",
       company: "Capital One",
       companylogo: require("./assets/images/capitalOneLogo.png"),
-      date: "Apr 2023 - Jan 2024"
-      // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      date: "Apr 2023 - Jan 2024",
+      desc: "Redesigned core systems with Spring Boot and microservices, improving scalability, deployment efficiency, and data migration processes.",
+      descBullets: [
+        "Migrated legacy systems to Spring Boot with CI/CD pipelines for improved scalability.",
+        "Developed backwards-compatible APIs for seamless data tokenization during database migrations.",
+        "Reduced maintenance costs through modernization and refactoring of core systems."
+      ]
     },
     {
       role: "Senior Software Engineer",
       company: "Salesforce",
       companylogo: require("./assets/images/salesforceLogo.png"),
-      date: "Nov 2022 - Mar 2023"
-      // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      date: "Nov 2022 - Mar 2023",
+      desc: "Led platform migrations and workflow automations, enhancing compatibility and streamlining cross-platform integrations.",
+      descBullets: [
+        "Migrated API Console from LitElement to LWC, enhancing platform compatibility.",
+        "Automated component exports, reducing manual effort and improving cross-team workflows.",
+        "Coordinated cross-team dependencies as the engineering point of contact."
+      ]
     },
     {
       role: "Software Engineer",
       company: "Salesforce",
       companylogo: require("./assets/images/salesforceLogo.png"),
-      date: "Feb 2020 - Oct 2022"
-      // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      date: "Feb 2020 - Oct 2022",
+      desc: "Maintained and enhanced developer tools, integrated GraphQL APIs, and standardized build processes for improved performance and reliability.",
+      descBullets: [
+        "Owned development of API Console, optimizing stability and usability for large datasets.",
+        "Integrated GraphQL APIs for ACM, reducing query latency and improving data fetching.",
+        "Standardized build processes, minimizing deployment errors across teams."
+      ]
     },
     {
       role: "Junior Software Engineer",
       company: "Salesforce / MuleSoft",
       companylogo: require("./assets/images/muleSoftLogo.png"),
-      date: "Feb 2018 - Jan 2020"
-      // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      date: "Feb 2018 - Jan 2020",
+      desc: "Pioneered key integrations between MuleSoft and Salesforce, developing dashboards and optimizing backend systems.",
+      descBullets: [
+        "Led MuleSoft-Salesforce integration, developing API Community Manager (ACM) with React.js.",
+        "Built advanced dashboards for API testing and monitoring with React.js and Redux.",
+        "Migrated Node.js services to Spring Boot, improving performance and deployment reliability."
+      ]
     },
     {
       role: "Software Engenieer Intern",
       company: "MuleSoft",
       companylogo: require("./assets/images/muleSoftLogo.png"),
-      date: "May 2017 - Jan 2018"
-      // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      date: "May 2017 - Jan 2018",
+      desc: "Built interactive dashboards and improved backend middleware, introducing advanced caching strategies for better performance.",
+      descBullets: [
+        "Created interactive dashboards for API Functional Monitoring with real-time data filtering.",
+        "Optimized middleware and backend services with caching strategies for better performance."
+      ]
     },
     {
       role: "Programmer Analyst",
       company: "Hospital Universitario Austral",
       companylogo: require("./assets/images/australLogo.png"),
-      date: "Apr 2016 - Apr 2017"
-      // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      date: "Apr 2016 - Apr 2017",
+      desc: "Streamlined hospital operations by developing digital forms and self-service kiosks for enhanced user experience.",
+      descBullets: [
+        "Developed electronic medical record forms using .NET and jQuery, improving workflows.",
+        "Designed self-service kiosks for patient check-ins, reducing wait times."
+      ]
     }
   ]
 };
@@ -233,34 +262,34 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Stuff I Made",
+  subtitle: "Some of the projects I've worked on",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/giftpoolLogo.png"),
+      projectName: "giftpool",
+      projectDesc: "A platform to create gifting groups and manage wishlists",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://saayahealth.com/"
+          url: "https://giftpool.app/"
         }
-        //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/splittrLogo.png"),
+      projectName: "splittr",
+      projectDesc:
+        "Simple web app for itemizing invoices with proportional tax",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://nextu.se/"
+          url: "https://splittr.twoplustwoone.dev/"
         }
       ]
     }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
