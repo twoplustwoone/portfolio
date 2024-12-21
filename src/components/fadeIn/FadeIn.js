@@ -8,7 +8,7 @@ const FadeIn = ({
   yOffset = 0,
   duration = 1,
   delay = 0,
-  threshold = 0.2
+  threshold = 0.1
 }) => {
   const [ref, inView] = useInView({
     triggerOnce: true,
