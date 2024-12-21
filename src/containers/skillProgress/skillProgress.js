@@ -1,14 +1,27 @@
 import React from "react";
 import "./Progress.scss";
 import {illustration, techStack} from "../../portfolio";
-import {Fade} from "react-reveal";
+import {motion} from "framer-motion";
 import Build from "../../assets/lottie/build";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 
 export default function StackProgress() {
   if (techStack.viewSkillBars) {
+    const fadeInFromBottom = {
+      hidden: {opacity: 0, y: 20},
+      visible: {
+        opacity: 1,
+        y: 0,
+        transition: {duration: 1, ease: "easeOut"}
+      }
+    };
+
     return (
-      <Fade bottom duration={1000} distance="20px">
+      <motion.div
+        initial="hidden"
+        animate="visible"
+        variants={fadeInFromBottom}
+      >
         <div className="skills-container">
           <div className="skills-bar">
             <h1 className="skills-heading">Proficiency</h1>
@@ -38,7 +51,7 @@ export default function StackProgress() {
             )}
           </div>
         </div>
-      </Fade>
+      </motion.div>
     );
   }
   return null;

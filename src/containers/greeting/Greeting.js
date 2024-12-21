@@ -1,5 +1,5 @@
 import React, {useContext} from "react";
-import {Fade} from "react-reveal";
+import {motion} from "framer-motion";
 import emoji from "react-easy-emoji";
 import "./Greeting.scss";
 import floatingPerson from "../../assets/lottie/floatingPerson";
@@ -14,8 +14,18 @@ export default function Greeting() {
   if (!greeting.displayGreeting) {
     return null;
   }
+
+  const fadeInVariants = {
+    hidden: {opacity: 0, y: 40},
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {duration: 1, ease: "easeOut"}
+    }
+  };
+
   return (
-    <Fade bottom duration={1000} distance="40px">
+    <motion.div initial="hidden" animate="visible" variants={fadeInVariants}>
       <div className="greet-main" id="greeting">
         <div className="greeting-main">
           <div className="greeting-text-div">
@@ -63,6 +73,6 @@ export default function Greeting() {
           </div>
         </div>
       </div>
-    </Fade>
+    </motion.div>
   );
 }

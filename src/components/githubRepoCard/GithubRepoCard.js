@@ -1,6 +1,6 @@
 import React from "react";
 import "./GithubRepoCard.scss";
-import {Fade} from "react-reveal";
+import {motion} from "framer-motion";
 import {formatFileSizeDisplay} from "../../utils";
 
 export default function GithubRepoCard({repo, isDark}) {
@@ -13,8 +13,18 @@ export default function GithubRepoCard({repo, isDark}) {
     win.focus();
   }
 
+  // Define animation variants for fading in from the bottom
+  const fadeInFromBottom = {
+    hidden: {opacity: 0, y: 20},
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {duration: 1, ease: "easeOut"}
+    }
+  };
+
   return (
-    <Fade bottom duration={1000} distance="20px">
+    <motion.div initial="hidden" animate="visible" variants={fadeInFromBottom}>
       <div>
         <div
           className={isDark ? "dark-card-mode repo-card-div" : "repo-card-div"}
@@ -90,6 +100,6 @@ export default function GithubRepoCard({repo, isDark}) {
           </div>
         </div>
       </div>
-    </Fade>
+    </motion.div>
   );
 }

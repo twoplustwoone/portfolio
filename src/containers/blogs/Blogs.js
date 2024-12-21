@@ -2,15 +2,18 @@ import React, {useState, useEffect, useContext} from "react";
 import "./Blog.scss";
 import BlogCard from "../../components/blogCard/BlogCard";
 import {blogSection} from "../../portfolio";
-import {Fade} from "react-reveal";
+import {motion} from "framer-motion";
 import StyleContext from "../../contexts/StyleContext";
+
 export default function Blogs() {
   const {isDark} = useContext(StyleContext);
   const [mediumBlogs, setMediumBlogs] = useState([]);
+
   function setMediumBlogsFunction(array) {
     setMediumBlogs(array);
   }
-  //Medium API returns blogs' content in HTML format. Below function extracts blogs' text content within paragraph tags
+
+  // Medium API returns blogs' content in HTML format. Below function extracts blogs' text content within paragraph tags
   function extractTextContent(html) {
     return typeof html === "string"
       ? html
@@ -21,6 +24,7 @@ export default function Blogs() {
           .join(" ")
       : NaN;
   }
+
   useEffect(() => {
     if (blogSection.displayMediumBlogs === "true") {
       const getProfileData = () => {
@@ -44,11 +48,22 @@ export default function Blogs() {
       getProfileData();
     }
   }, []);
+
   if (!blogSection.display) {
     return null;
   }
+
+  const fadeInFromBottom = {
+    hidden: {opacity: 0, y: 20},
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {duration: 1, ease: "easeOut"}
+    }
+  };
+
   return (
-    <Fade bottom duration={1000} distance="20px">
+    <motion.div initial="hidden" animate="visible" variants={fadeInFromBottom}>
       <div className="main" id="blogs">
         <div className="blog-header">
           <h1 className="blog-header-text">{blogSection.title}</h1>
@@ -94,6 +109,6 @@ export default function Blogs() {
           </div>
         </div>
       </div>
-    </Fade>
+    </motion.div>
   );
 }

@@ -1,7 +1,7 @@
 import React, {useContext} from "react";
 import "./StartupProjects.scss";
 import {bigProjects} from "../../portfolio";
-import {Fade} from "react-reveal";
+import {motion} from "framer-motion";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function StartupProject() {
@@ -17,8 +17,18 @@ export default function StartupProject() {
   if (!bigProjects.display) {
     return null;
   }
+
+  const fadeInFromBottom = {
+    hidden: {opacity: 0, y: 20},
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {duration: 1, ease: "easeOut"}
+    }
+  };
+
   return (
-    <Fade bottom duration={1000} distance="20px">
+    <motion.div initial="hidden" animate="visible" variants={fadeInFromBottom}>
       <div className="main" id="projects">
         <div>
           <h1 className="skills-heading">{bigProjects.title}</h1>
@@ -89,6 +99,6 @@ export default function StartupProject() {
           </div>
         </div>
       </div>
-    </Fade>
+    </motion.div>
   );
 }
