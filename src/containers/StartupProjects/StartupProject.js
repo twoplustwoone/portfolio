@@ -1,7 +1,7 @@
 import React, {useContext} from "react";
 import "./StartupProjects.scss";
 import {bigProjects} from "../../portfolio";
-import {motion} from "framer-motion";
+import FadeIn from "../../components/fadeIn/FadeIn";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function StartupProject() {
@@ -9,26 +9,18 @@ export default function StartupProject() {
     if (!url) {
       return;
     }
-    var win = window.open(url, "_blank");
+    const win = window.open(url, "_blank");
     win.focus();
   }
 
   const {isDark} = useContext(StyleContext);
+
   if (!bigProjects.display) {
     return null;
   }
 
-  const fadeInFromBottom = {
-    hidden: {opacity: 0, y: 20},
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {duration: 1, ease: "easeOut"}
-    }
-  };
-
   return (
-    <motion.div initial="hidden" animate="visible" variants={fadeInFromBottom}>
+    <FadeIn yOffset={20} duration={1}>
       <div className="main" id="projects">
         <div>
           <h1 className="skills-heading">{bigProjects.title}</h1>
@@ -43,62 +35,58 @@ export default function StartupProject() {
           </p>
 
           <div className="projects-container">
-            {bigProjects.projects.map((project, i) => {
-              return (
-                <div
-                  key={i}
-                  className={
-                    isDark
-                      ? "dark-mode project-card project-card-dark"
-                      : "project-card project-card-light"
-                  }
-                >
-                  {project.image ? (
-                    <div className="project-image">
-                      <img
-                        src={project.image}
-                        alt={project.projectName}
-                        className="card-image"
-                      ></img>
-                    </div>
-                  ) : null}
-                  <div className="project-detail">
-                    <h5
-                      className={isDark ? "dark-mode card-title" : "card-title"}
-                    >
-                      {project.projectName}
-                    </h5>
-                    <p
-                      className={
-                        isDark ? "dark-mode card-subtitle" : "card-subtitle"
-                      }
-                    >
-                      {project.projectDesc}
-                    </p>
-                    {project.footerLink ? (
-                      <div className="project-card-footer">
-                        {project.footerLink.map((link, i) => {
-                          return (
-                            <span
-                              key={i}
-                              className={
-                                isDark ? "dark-mode project-tag" : "project-tag"
-                              }
-                              onClick={() => openUrlInNewTab(link.url)}
-                            >
-                              {link.name}
-                            </span>
-                          );
-                        })}
-                      </div>
-                    ) : null}
+            {bigProjects.projects.map((project, i) => (
+              <div
+                key={i}
+                className={
+                  isDark
+                    ? "dark-mode project-card project-card-dark"
+                    : "project-card project-card-light"
+                }
+              >
+                {project.image && (
+                  <div className="project-image">
+                    <img
+                      src={project.image}
+                      alt={project.projectName}
+                      className="card-image"
+                    />
                   </div>
+                )}
+                <div className="project-detail">
+                  <h5
+                    className={isDark ? "dark-mode card-title" : "card-title"}
+                  >
+                    {project.projectName}
+                  </h5>
+                  <p
+                    className={
+                      isDark ? "dark-mode card-subtitle" : "card-subtitle"
+                    }
+                  >
+                    {project.projectDesc}
+                  </p>
+                  {project.footerLink && (
+                    <div className="project-card-footer">
+                      {project.footerLink.map((link, j) => (
+                        <span
+                          key={j}
+                          className={
+                            isDark ? "dark-mode project-tag" : "project-tag"
+                          }
+                          onClick={() => openUrlInNewTab(link.url)}
+                        >
+                          {link.name}
+                        </span>
+                      ))}
+                    </div>
+                  )}
                 </div>
-              );
-            })}
+              </div>
+            ))}
           </div>
         </div>
       </div>
-    </motion.div>
+    </FadeIn>
   );
 }

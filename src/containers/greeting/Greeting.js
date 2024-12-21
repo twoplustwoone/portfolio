@@ -1,13 +1,13 @@
 import React, {useContext} from "react";
-import {motion} from "framer-motion";
-import emoji from "react-easy-emoji";
 import "./Greeting.scss";
+import emoji from "react-easy-emoji";
 import floatingPerson from "../../assets/lottie/floatingPerson";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 import {illustration, greeting} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
+import FadeIn from "../../components/fadeIn/FadeIn";
 
 export default function Greeting() {
   const {isDark} = useContext(StyleContext);
@@ -15,17 +15,8 @@ export default function Greeting() {
     return null;
   }
 
-  const fadeInVariants = {
-    hidden: {opacity: 0, y: 40},
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {duration: 1, ease: "easeOut"}
-    }
-  };
-
   return (
-    <motion.div initial="hidden" animate="visible" variants={fadeInVariants}>
+    <FadeIn yOffset={40} duration={1}>
       <div className="greet-main" id="greeting">
         <div className="greeting-main">
           <div className="greeting-text-div">
@@ -33,7 +24,6 @@ export default function Greeting() {
               <h1
                 className={isDark ? "dark-mode greeting-text" : "greeting-text"}
               >
-                {" "}
                 {greeting.title}{" "}
                 <span className="wave-emoji">{emoji("👋")}</span>
               </h1>
@@ -68,11 +58,11 @@ export default function Greeting() {
               <img
                 alt="man sitting on table"
                 src={require("../../assets/images/manOnTable.svg")}
-              ></img>
+              />
             )}
           </div>
         </div>
       </div>
-    </motion.div>
+    </FadeIn>
   );
 }

@@ -1,30 +1,22 @@
 import React, {useContext} from "react";
 import "./Podcast.scss";
 import {podcastSection} from "../../portfolio";
-import {motion} from "framer-motion";
+import FadeIn from "../../components/fadeIn/FadeIn";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Podcast() {
   const {isDark} = useContext(StyleContext);
 
-  if (!podcastSection)
+  if (!podcastSection) {
     console.error("podcastSection object for Podcast section is missing");
+  }
 
   if (!podcastSection.display) {
     return null;
   }
 
-  const fadeInFromBottom = {
-    hidden: {opacity: 0, y: 20},
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {duration: 1, ease: "easeOut"}
-    }
-  };
-
   return (
-    <motion.div initial="hidden" animate="visible" variants={fadeInFromBottom}>
+    <FadeIn yOffset={20} duration={1}>
       <div className="main">
         <div className="podcast-header">
           <h1 className="podcast-header-title">{podcastSection.title}</h1>
@@ -59,6 +51,6 @@ export default function Podcast() {
           })}
         </div>
       </div>
-    </motion.div>
+    </FadeIn>
   );
 }

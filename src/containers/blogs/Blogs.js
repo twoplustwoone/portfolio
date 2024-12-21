@@ -2,7 +2,7 @@ import React, {useState, useEffect, useContext} from "react";
 import "./Blog.scss";
 import BlogCard from "../../components/blogCard/BlogCard";
 import {blogSection} from "../../portfolio";
-import {motion} from "framer-motion";
+import FadeIn from "../../components/fadeIn/FadeIn";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Blogs() {
@@ -53,17 +53,8 @@ export default function Blogs() {
     return null;
   }
 
-  const fadeInFromBottom = {
-    hidden: {opacity: 0, y: 20},
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {duration: 1, ease: "easeOut"}
-    }
-  };
-
   return (
-    <motion.div initial="hidden" animate="visible" variants={fadeInFromBottom}>
+    <FadeIn yOffset={20} duration={1}>
       <div className="main" id="blogs">
         <div className="blog-header">
           <h1 className="blog-header-text">{blogSection.title}</h1>
@@ -79,36 +70,32 @@ export default function Blogs() {
           <div className="blog-text-div">
             {blogSection.displayMediumBlogs !== "true" ||
             mediumBlogs === "Error"
-              ? blogSection.blogs.map((blog, i) => {
-                  return (
-                    <BlogCard
-                      key={i}
-                      isDark={isDark}
-                      blog={{
-                        url: blog.url,
-                        image: blog.image,
-                        title: blog.title,
-                        description: blog.description
-                      }}
-                    />
-                  );
-                })
-              : mediumBlogs.map((blog, i) => {
-                  return (
-                    <BlogCard
-                      key={i}
-                      isDark={isDark}
-                      blog={{
-                        url: blog.link,
-                        title: blog.title,
-                        description: extractTextContent(blog.content)
-                      }}
-                    />
-                  );
-                })}
+              ? blogSection.blogs.map((blog, i) => (
+                  <BlogCard
+                    key={i}
+                    isDark={isDark}
+                    blog={{
+                      url: blog.url,
+                      image: blog.image,
+                      title: blog.title,
+                      description: blog.description
+                    }}
+                  />
+                ))
+              : mediumBlogs.map((blog, i) => (
+                  <BlogCard
+                    key={i}
+                    isDark={isDark}
+                    blog={{
+                      url: blog.link,
+                      title: blog.title,
+                      description: extractTextContent(blog.content)
+                    }}
+                  />
+                ))}
           </div>
         </div>
       </div>
-    </motion.div>
+    </FadeIn>
   );
 }

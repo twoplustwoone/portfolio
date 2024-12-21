@@ -1,6 +1,6 @@
 import React from "react";
 import "./GithubRepoCard.scss";
-import {motion} from "framer-motion";
+import FadeIn from "../fadeIn/FadeIn";
 import {formatFileSizeDisplay} from "../../utils";
 
 export default function GithubRepoCard({repo, isDark}) {
@@ -9,22 +9,12 @@ export default function GithubRepoCard({repo, isDark}) {
       console.log(`URL in ${name} is undefined`);
       return;
     }
-    var win = window.open(url, "_blank");
+    const win = window.open(url, "_blank");
     win.focus();
   }
 
-  // Define animation variants for fading in from the bottom
-  const fadeInFromBottom = {
-    hidden: {opacity: 0, y: 20},
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {duration: 1, ease: "easeOut"}
-    }
-  };
-
   return (
-    <motion.div initial="hidden" animate="visible" variants={fadeInFromBottom}>
+    <FadeIn yOffset={20} duration={1}>
       <div>
         <div
           className={isDark ? "dark-card-mode repo-card-div" : "repo-card-div"}
@@ -50,7 +40,7 @@ export default function GithubRepoCard({repo, isDark}) {
           <p className="repo-description">{repo.node.description}</p>
           <div className="repo-stats">
             <div className="repo-left-stat">
-              {repo.node.primaryLanguage !== null && (
+              {repo.node.primaryLanguage && (
                 <span>
                   <div
                     className="language-color"
@@ -100,6 +90,6 @@ export default function GithubRepoCard({repo, isDark}) {
           </div>
         </div>
       </div>
-    </motion.div>
+    </FadeIn>
   );
 }

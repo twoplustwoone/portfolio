@@ -2,7 +2,7 @@ import React, {useContext} from "react";
 import "./Achievement.scss";
 import AchievementCard from "../../components/achievementCard/AchievementCard";
 import {achievementSection} from "../../portfolio";
-import {motion} from "framer-motion";
+import FadeIn from "../../components/fadeIn/FadeIn";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Achievement() {
@@ -11,17 +11,8 @@ export default function Achievement() {
     return null;
   }
 
-  const fadeInVariants = {
-    hidden: {opacity: 0, y: 20},
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {duration: 1, ease: "easeOut"}
-    }
-  };
-
   return (
-    <motion.div initial="hidden" animate="visible" variants={fadeInVariants}>
+    <FadeIn yOffset={20} duration={1}>
       <div className="main" id="achievements">
         <div className="achievement-main-div">
           <div className="achievement-header">
@@ -63,6 +54,6 @@ export default function Achievement() {
           </div>
         </div>
       </div>
-    </motion.div>
+    </FadeIn>
   );
 }

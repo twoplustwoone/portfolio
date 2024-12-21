@@ -2,7 +2,7 @@ import React, {useContext} from "react";
 import "./Contact.scss";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import {illustration, contactInfo} from "../../portfolio";
-import {motion} from "framer-motion";
+import FadeIn from "../../components/fadeIn/FadeIn";
 import email from "../../assets/lottie/email";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
@@ -10,17 +10,8 @@ import StyleContext from "../../contexts/StyleContext";
 export default function Contact() {
   const {isDark} = useContext(StyleContext);
 
-  const fadeInVariants = {
-    hidden: {opacity: 0, y: 20},
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {duration: 1, ease: "easeOut"}
-    }
-  };
-
   return (
-    <motion.div initial="hidden" animate="visible" variants={fadeInVariants}>
+    <FadeIn yOffset={20} duration={1}>
       <div className="main contact-margin-top" id="contact">
         <div className="contact-div-main">
           <div className="contact-header">
@@ -69,11 +60,11 @@ export default function Contact() {
               <img
                 alt="Man working"
                 src={require("../../assets/images/contactMailDark.svg")}
-              ></img>
+              />
             )}
           </div>
         </div>
       </div>
-    </motion.div>
+    </FadeIn>
   );
 }
