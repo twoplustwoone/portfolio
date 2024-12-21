@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.c03f9fa2.css",
-    "main.js": "./static/js/main.f321ffa9.js",
+    "main.js": "./static/js/main.53dcc40a.js",
     "static/css/64.b0ec64d9.chunk.css": "./static/css/64.b0ec64d9.chunk.css",
     "static/js/64.56dc6704.chunk.js": "./static/js/64.56dc6704.chunk.js",
     "static/css/769.46e96578.chunk.css": "./static/css/769.46e96578.chunk.css",
@@ -12,7 +12,6 @@
     "static/media/giftpoolLogo.png": "./static/media/giftpoolLogo.3167087032fea5c05e68.png",
     "static/media/muleSoftLogo.png": "./static/media/muleSoftLogo.59df4563f4e68583a1cc.png",
     "static/media/Agustina.woff": "./static/media/Agustina.eb0c59dda4cc308cba96.woff",
-    "static/media/resume.pdf": "./static/media/resume.66e70ff65c70cc364584.pdf",
     "static/media/splittrLogo.png": "./static/media/splittrLogo.757197e1e079cd6f5e84.png",
     "static/media/salesforceLogo.png": "./static/media/salesforceLogo.21cb9b8012aa22811484.png",
     "static/media/manOnTable.svg": "./static/media/manOnTable.8f117eb207e57ed8f89d67d595aceb45.svg",
@@ -24,7 +23,7 @@
     "index.html": "./index.html",
     "static/media/talksCardBack.svg": "./static/media/talksCardBack.73ed1545d58273ba64b0.svg",
     "main.c03f9fa2.css.map": "./static/css/main.c03f9fa2.css.map",
-    "main.f321ffa9.js.map": "./static/js/main.f321ffa9.js.map",
+    "main.53dcc40a.js.map": "./static/js/main.53dcc40a.js.map",
     "64.b0ec64d9.chunk.css.map": "./static/css/64.b0ec64d9.chunk.css.map",
     "64.56dc6704.chunk.js.map": "./static/js/64.56dc6704.chunk.js.map",
     "769.46e96578.chunk.css.map": "./static/css/769.46e96578.chunk.css.map",
@@ -32,6 +31,6 @@
   },
   "entrypoints": [
     "static/css/main.c03f9fa2.css",
-    "static/js/main.f321ffa9.js"
+    "static/js/main.53dcc40a.js"
   ]
 }
