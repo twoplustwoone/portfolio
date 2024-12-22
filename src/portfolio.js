@@ -21,7 +21,7 @@ const illustration = {
 
 const greeting = {
   username: "Francisco Di Giandomenico",
-  title: "Hey all, I'm Francisco",
+  title: "Hey everyone, I'm Francisco",
   subTitle: emoji(
     "An avid gamer 🎮, software engineer 👨‍💻, writer 📝, and cat lover 🐈, with vast experience in developing web applications, focusing strongly on user experience, design, and making things people are happy to use."
   ),
