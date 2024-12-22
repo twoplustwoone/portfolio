@@ -15,7 +15,10 @@ export default function Skills() {
   }
 
   return (
-    <div className={isDark ? "dark-mode main" : "main"} id="skills">
+    <div
+      className={isDark ? "dark-mode main skills" : "main skills"}
+      id="skills"
+    >
       <div className="skills-main-div">
         <FadeIn xOffset={-20} duration={1}>
           <div className="skills-image-div">
