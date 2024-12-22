@@ -44,7 +44,7 @@ export default function Greeting() {
                   <Button
                     download="Francisco Di Giandomenico - Resume.pdf"
                     className="download-link-button"
-                    href={"/resume.pdf"}
+                    href={"/resume.pdf?cache-bust=" + new Date().getTime()}
                     text="Download my resume"
                   />
                 )}
