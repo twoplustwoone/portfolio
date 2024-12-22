@@ -1,19 +1,11 @@
-/* Change this file to get your personal Portfolio */
-
-// To change portfolio colors globally go to the  _globalColor.scss file
-
 import emoji from "react-easy-emoji";
-import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
-
-// Splash Screen
+import splashAnimation from "./assets/lottie/splashAnimation";
 
 const splashScreen = {
-  enabled: true, // set false to disable splash screen
+  enabled: true,
   animation: splashAnimation,
-  duration: 2000 // Set animation duration as per your animation
+  duration: 2000
 };
-
-// Summary And Greeting Section
 
 const illustration = {
   animated: true // Set to false to use static SVG
@@ -30,19 +22,11 @@ const greeting = {
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
-// Social Media Links
-
 const socialMediaLinks = {
   github: "https://github.com/twoplustwoone",
   linkedin: "https://www.linkedin.com/in/fdigiandomenico/",
   gmail: "frandigiand@gmail.com",
-  // gitlab: "https://gitlab.com/saadpasta",
-  // facebook: "https://www.facebook.com/saad.pasta7",
-  // medium: "https://medium.com/@saadpasta",
-  // stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
-  // Instagram, Twitter and Kaggle are also supported in the links!
-  // To customize icons and social links, tweak src/components/SocialMedia
-  display: true // Set true to display this section, defaults to false
+  display: true
 };
 
 // Skills Section
@@ -63,9 +47,6 @@ const skillsSection = {
       "🔒 Developing and maintaining scalable, performant, and secure web applications"
     )
   ],
-
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
@@ -96,10 +77,6 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "nodejs",
       fontAwesomeClassname: "fab fa-node"
     },
-    // {
-    //   skillName: "swift",
-    //   fontAwesomeClassname: "fab fa-swift"
-    // },
     {
       skillName: "npm",
       fontAwesomeClassname: "fab fa-npm"
@@ -112,10 +89,6 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "aws",
       fontAwesomeClassname: "fab fa-aws"
     },
-    // {
-    //   skillName: "firebase",
-    //   fontAwesomeClassname: "fas fa-fire"
-    // },
     {
       skillName: "python",
       fontAwesomeClassname: "fab fa-python"
@@ -137,13 +110,11 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-jenkins"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
-// Education Section
-
 const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
+  display: true,
   schools: [
     {
       schoolName: "Universidad Austral",
@@ -155,16 +126,12 @@ const educationInfo = {
   ]
 };
 
-// Your top 3 proficient stacks/tech experience
-
 const techStack = {
-  viewSkillBars: false //Set it to true to show Proficiency Section
+  viewSkillBars: false
 };
 
-// Work experience section
-
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+  display: true,
   experience: [
     {
       role: "Software Engineer",
@@ -251,15 +218,10 @@ const workExperiences = {
   ]
 };
 
-/* Your Open Source Section to View Your Github Pinned Projects
-To know how to get github key look at readme.md */
-
 const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  showGithubProfile: "true",
+  display: true
 };
-
-// Some big projects you have worked on
 
 const bigProjects = {
   title: "Stuff I Made",
@@ -289,16 +251,12 @@ const bigProjects = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
-
-// Achievement Section
-// Include certificates, talks etc
 
 const achievementSection = {
   title: emoji("Achievements And Certifications 🏆 "),
-  subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+  subtitle: "Achievements and Certifications I've earned!",
 
   achievementsCards: [
     {
@@ -328,10 +286,8 @@ const achievementSection = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
-
-// Blogs Section
 
 const blogSection = {
   title: "Blogs",
@@ -352,10 +308,8 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: false
 };
-
-// Talks Sections
 
 const talkSection = {
   title: "TALKS",
@@ -371,29 +325,22 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: false
 };
-
-// Podcast Section
 
 const podcastSection = {
   title: emoji("Podcast 🎙️"),
   subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
 
   // Please Provide with Your Podcast embeded Link
-  podcast: [
-    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
-  ],
-  display: false // Set false to hide this section, defaults to true
+  podcast: [],
+  display: false
 };
 
-// Resume Section
 const resumeSection = {
   title: "Resume",
   subtitle: "Feel free to download my resume",
-
-  // Please Provide with Your Podcast embeded Link
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 const contactInfo = {
@@ -404,14 +351,12 @@ const contactInfo = {
   email_address: "frandigiand@gmail.com"
 };
 
-// Twitter Section
-
 const twitterDetails = {
-  userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: false // Set true to display this section, defaults to false
+  userName: "twitter",
+  display: false
 };
 
-const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true;
 
 export {
   illustration,
