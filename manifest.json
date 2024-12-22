@@ -1,25 +1,27 @@
 {
-  "short_name": "DeveloperFolio",
-  "name": "DeveloperFolio",
+  "short_name": "FranciscoPortfolio",
+  "name": "Francisco Di Giandomenico | Software Engineer Portfolio",
   "icons": [
     {
-      "src": "/favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "src": "my-logo.png",
+      "sizes": "32x32 16x16",
+      "type": "image/png"
     },
     {
-      "src": "/android-chrome-192x192.png?v8=qAJ44G5Bm7",
+      "src": "my-logo.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/android-chrome-384x384.png?v8=qAJ44G5Bm7",
+      "src": "my-logo.png",
       "type": "image/png",
-      "sizes": "384x384"
+      "sizes": "512x512"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
   "theme_color": "#6c63ff",
-  "background_color": "#ffffff"
+  "background_color": "#ffffff",
+  "description": "Portfolio showcasing the work, skills, and projects of Francisco Di Giandomenico, a software engineer specializing in modern frameworks, system modernization, and immersive solutions.",
+  "lang": "en-US"
 }
