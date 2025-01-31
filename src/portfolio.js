@@ -139,9 +139,9 @@ const workExperiences = {
       date: "Feb 2024 - Dec 2024",
       desc: "Developed and optimized user-focused features for Einstein Studio, integrating cutting-edge AI solutions and enhancing performance for large-scale datasets.",
       descBullets: [
-        "Designed and implemented core UI features for Einstein Studio using JavaScript, LWC, and Redux.",
-        "Delivered the BYOLLM project on schedule, integrating providers like Azure OpenAI, OpenAI, and Vertex AI.",
-        "Improved large dataset performance with advanced pagination techniques."
+        "Delivered provider-agnostic LLM integration on a tight deadline, increasing customer engagement by 12%",
+        "Implemented Jest and Selenium E2E tests, reaching 90% coverage and reducing regressions by 15%",
+        "Optimized pagination by implementing lazy loading, reducing page load times by 17%"
       ]
     },
     {
@@ -151,9 +151,9 @@ const workExperiences = {
       date: "Apr 2023 - Jan 2024",
       desc: "Redesigned core systems with Spring Boot and microservices, improving scalability, deployment efficiency, and data migration processes.",
       descBullets: [
-        "Migrated legacy systems to Spring Boot with CI/CD pipelines for improved scalability.",
-        "Developed backwards-compatible APIs for seamless data tokenization during database migrations.",
-        "Reduced maintenance costs through modernization and refactoring of core systems."
+        "Refactored legacy code to Spring Boot microservices with AWS Lambda, cutting costs and boosting scalability",
+        "Efforts led to improved system scalability, as well as a reduction in deployment time to under 4 minutes",
+        "Designed API features for seamless data tokenization, reducing database migration downtime by 15%"
       ]
     },
     {
@@ -163,9 +163,9 @@ const workExperiences = {
       date: "Nov 2022 - Mar 2023",
       desc: "Led platform migrations and workflow automations, enhancing compatibility and streamlining cross-platform integrations.",
       descBullets: [
-        "Migrated API Console from LitElement to LWC, enhancing platform compatibility.",
-        "Automated component exports, reducing manual effort and improving cross-team workflows.",
-        "Coordinated cross-team dependencies as the engineering point of contact."
+        "Led migration to LWC, improving rendering speed by 18%, delivering beta-ready milestones on time",
+        "Automated CI/CD scripts with Jenkins and Node.js, streamlining exports and cutting manual work by 30%",
+        "Managed product lifecycle, collaborating with PMs, UX, and engineering to resolve issues and prioritize features"
       ]
     },
     {
@@ -175,9 +175,10 @@ const workExperiences = {
       date: "Feb 2020 - Oct 2022",
       desc: "Maintained and enhanced developer tools, integrated GraphQL APIs, and standardized build processes for improved performance and reliability.",
       descBullets: [
-        "Owned development of API Console, optimizing stability and usability for large datasets.",
-        "Integrated GraphQL APIs for ACM, reducing query latency and improving data fetching.",
-        "Standardized build processes, minimizing deployment errors across teams."
+        "Revamped stale product, clearing backlog and cutting monthly bug logs by 60%",
+        "Reduced query latency by 15% by using GraphQL APIs and optimized caching, improving performance by 16%",
+        "Standardized build processes and release pipelines, reducing regression logs by 25%",
+        "Automated testing with Jenkins, consolidating interdependent tests and cutting regressions by 60%"
       ]
     },
     {
@@ -187,9 +188,10 @@ const workExperiences = {
       date: "Feb 2018 - Jan 2020",
       desc: "Pioneered key integrations between MuleSoft and Salesforce, developing dashboards and optimizing backend systems.",
       descBullets: [
-        "Led MuleSoft-Salesforce integration, developing API Community Manager (ACM) with React.js.",
-        "Built advanced dashboards for API testing and monitoring with React.js and Redux.",
-        "Migrated Node.js services to Spring Boot, improving performance and deployment reliability."
+        "Developed core UI components to leverage Salesforce communities using MuleSoft data",
+        "Mentored interns and collaborated with backend teams to optimize workflows and enhance team productivity",
+        "Conducted usability tests to validate design decisions, improving customer satisfaction scores by 15%",
+        "Migrated services to Spring Boot, reducing system downtime by 20% and improving deployment reliability"
       ]
     },
     {
@@ -199,8 +201,8 @@ const workExperiences = {
       date: "May 2017 - Jan 2018",
       desc: "Built interactive dashboards and improved backend middleware, introducing advanced caching strategies for better performance.",
       descBullets: [
-        "Created interactive dashboards for API Functional Monitoring with real-time data filtering.",
-        "Optimized middleware and backend services with caching strategies for better performance."
+        "Built early interactive monitoring dashboards, integrating real-time data filtering for improved insights",
+        "Enhanced backend services, optimizing middleware and introducing caching strategies"
       ]
     },
     {
@@ -210,8 +212,8 @@ const workExperiences = {
       date: "Apr 2016 - Apr 2017",
       desc: "Streamlined hospital operations by developing digital forms and self-service kiosks for enhanced user experience.",
       descBullets: [
-        "Developed electronic medical record forms using .NET and jQuery, improving workflows.",
-        "Designed self-service kiosks for patient check-ins, reducing wait times."
+        "Developed reusable medical record forms, reducing hospital processing times by 40%",
+        "Designed and implemented patient check-in kiosk workflows, reducing average wait times by 25%"
       ]
     }
   ]
