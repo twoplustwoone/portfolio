@@ -152,7 +152,7 @@ export const catReviews: CatReview[] = [
     title: "Sovereign of the Top Shelf · Drawer Archaeologist",
     stars: "★★★★★",
     review:
-      "Five stars. Obviously. I reviewed this website from my throne atop the wall furniture, which is my domain. He assembled the whole thing while I supervised, occasionally walking across his keyboard to check the code quality. At one point I opened his desk drawer and removed a cable. He called it a bug. I called it a contribution. He kept the chair open for me the entire time. Smart man.",
+      "Smooth. Fast. Warm color palette \u2014 finally, a man who understands that orange is the superior color. Five stars. I supervised the entire build from above, which is the only correct vantage point.",
   },
   {
     name: "Truffle",
@@ -160,7 +160,7 @@ export const catReviews: CatReview[] = [
     title: "Chief Noise Officer · Certified Velcro Cat",
     stars: "★★★☆☆",
     review:
-      "He built this website over several weeks, during which I meowed at him approximately 4,700 times. He heard maybe twelve. The font choices are nice — I\u2019ll give him that. I carried my spring to his feet as a peace offering on three separate occasions. He said \u201cnot now, buddy.\u201d Three stars. This is what I deal with.",
+      "I voiced 47 concerns during development. He addressed zero of them. The site is fine. The \u2018Currently\u2019 section doesn\u2019t mention me once, which is an oversight I\u2019ll be vocalizing for the foreseeable future.",
   },
   {
     name: "Muffin",
@@ -168,6 +168,6 @@ export const catReviews: CatReview[] = [
     title: "Head of Security · Bathroom Surveillance Division",
     stars: "★★☆☆☆",
     review:
-      "I was promised snacks in exchange for this review. There were no snacks. I have been staring at this website for eleven minutes and I am absolutely famished. There is an entire section called \u2018About\u2019 with no mention of the food bowl situation in this apartment, which I consider a significant editorial failure. Two stars for the design \u2014 it\u2019s warm and I appreciate warmth. I am not a monster. Ekekekekek.",
+      "There is an entire \u2018About\u2019 section with no mention of the food bowl situation in this apartment. Two stars. The design is warm, which I respect. I am not a monster.",
   },
 ];
