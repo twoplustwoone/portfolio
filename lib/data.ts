@@ -19,7 +19,7 @@ export const socialLinks: SocialLink[] = [
 ];
 
 export const resumeUrl =
-  "https://docs.google.com/document/d/1Y_BIULNFCv1uIMWFlRSWDpZOc2y8k-GaNEW8uFweVZ8/export?format=pdf";
+  "https://drive.google.com/file/d/1gUa4VpEpTghHmwQbfpDUDhehKkkz6nmG/view?usp=sharing";
 
 export const githubAvatarUrl =
   "https://avatars.githubusercontent.com/twoplustwoone";
