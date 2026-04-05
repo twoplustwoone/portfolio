@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #fbf8f4;
+  --bg-card: #f2ede7;
+  --bg-card-hover: #ede6de;
+  --text: #231a17;
+  --text-muted: #8b7167;
+  --accent: #c4622d;
+  --accent-hover: #a84e22;
+  --accent-muted: #f2d5c8;
+  --accent-pale: #fbf0ea;
+  --border: #e0d7ce;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
