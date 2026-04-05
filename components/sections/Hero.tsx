@@ -30,9 +30,9 @@ export default function Hero() {
         {/* Description */}
         <p className="max-w-[520px] text-[1.05rem] leading-[1.75] text-[--text-muted]">
           I build things for people who notice when something feels slightly
-          off. Six-plus years shipping AI-integrated products at Salesforce —
-          and a US patent somewhere along the way — taught me that good software
-          doesn&apos;t just work. It has to{" "}
+          off. Currently at Atlassian — six-plus years at Salesforce before
+          that, a US patent somewhere along the way — I&apos;ve learned that
+          good software doesn&apos;t just work. It has to{" "}
           <em>feel like something.</em>
         </p>
 

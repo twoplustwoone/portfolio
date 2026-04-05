@@ -27,6 +27,20 @@ export const githubAvatarUrl =
 // ─── Experience ────────────────────────────────────────────
 export const experiences: WorkExperience[] = [
   {
+    year: "2025",
+    role: "Software Engineer",
+    company: "Atlassian",
+    date: "Apr 2025 – Present",
+    description:
+      "Building frontend features across Atlassian's analytics and prospecting products — from charting tools to a GraphQL-backed preferences system.",
+    highlights: [
+      "Built a 'create chart from table' feature enabling users to turn data views into dashboard charts",
+      "Refactored chart query logic (SalesQL) to align charts with global filters, eliminating inconsistent time views",
+      "Architected and led migration of a fragmented localStorage preferences system to a centralized, GraphQL-backed package — authored the RFC, designed usePreference hooks, and migrated all preference categories",
+      "Defined frontend architecture for a lead prospecting product using typed view models and data mapping for evolving APIs",
+    ],
+  },
+  {
     year: "2024",
     role: "Software Engineer",
     company: "Salesforce — Einstein Studio",
@@ -34,9 +48,8 @@ export const experiences: WorkExperience[] = [
     description:
       "Built and optimized user-facing features for Einstein Studio, the AI model hub powering Salesforce's generative AI products.",
     highlights: [
-      "Delivered provider-agnostic LLM integration on a tight deadline, increasing customer engagement by 12%",
-      "Implemented Jest and Selenium E2E tests, reaching 90% coverage and reducing regressions by 15%",
-      "Optimized pagination via lazy loading, cutting page load times by 17%",
+      "Built a provider-agnostic LLM layer supporting multiple backends, enabling rapid iteration and increasing engagement by 12%",
+      "Enhanced pagination with lazy loading and responsive design, reducing page load times by 17%",
     ],
   },
   {
@@ -47,36 +60,43 @@ export const experiences: WorkExperience[] = [
     description:
       "Redesigned core backend systems with Spring Boot and microservices, improving scalability and deployment reliability.",
     highlights: [
-      "Refactored legacy code to Spring Boot microservices with AWS Lambda, cutting costs and boosting scalability",
-      "Reduced deployment time to under 4 minutes through improved pipeline design",
-      "Designed API features for seamless data tokenization, reducing migration downtime by 15%",
+      "Refactored legacy systems to Spring Boot microservices on AWS Lambda, reducing costs 25% and capacity 40%",
+      "Engineered API features for secure data tokenization, reducing migration downtime by 15%",
+    ],
+  },
+  {
+    year: "2020",
+    role: "Software Engineer → Senior Software Engineer",
+    company: "Salesforce",
+    date: "Feb 2020 – Mar 2023",
+    description:
+      "Worked across platform infrastructure and developer tooling — automating CI/CD pipelines, improving GraphQL performance, and shipping product improvements at scale.",
+    highlights: [
+      "Automated CI/CD workflows with Jenkins and Node.js, streamlining exports and cutting manual work by 30%",
+      "Improved GraphQL performance via caching, reducing latency 15% and improving responsiveness 16%",
     ],
   },
   {
     year: "2018",
-    role: "Software Engineer → Senior Engineer",
+    role: "Junior Software Engineer",
     company: "Salesforce",
-    date: "Feb 2018 – Mar 2023",
+    date: "Feb 2018 – Jan 2020",
     description:
-      "Four-plus years across multiple Salesforce teams — developer tooling, platform infrastructure, and LWC migrations at scale.",
+      "Started as a junior engineer in Argentina, building reusable UI components and establishing engineering practices within the team.",
     highlights: [
-      "Led migration to Lightning Web Components, improving rendering speed by 18%",
-      "Revamped stale product, clearing backlog and cutting monthly bug logs by 60%",
-      "Integrated GraphQL APIs and optimized caching, improving query performance by 16%",
-      "Automated CI/CD with Jenkins and Node.js, cutting manual work by 30%",
+      "Designed reusable Salesforce UI components with MuleSoft, increasing development speed by 40%",
+      "Introduced a code review process that cut review time by 20% and accelerated deployment cycles",
     ],
   },
   {
     year: "2017",
-    role: "Software Engineer Intern → Engineer",
+    role: "Software Engineer Intern",
     company: "MuleSoft",
-    date: "May 2017 – Jan 2020",
+    date: "May 2017 – Jan 2018",
     description:
-      "Started as an intern, joined full-time, and helped pioneer key integrations between MuleSoft and Salesforce post-acquisition.",
+      "Interned in Argentina building interactive monitoring dashboards and real-time data filtering tools.",
     highlights: [
-      "Built early interactive monitoring dashboards with real-time data filtering",
-      "Developed core UI components leveraging Salesforce communities using MuleSoft data",
-      "Conducted usability tests that improved customer satisfaction scores by 15%",
+      "Built interactive monitoring dashboards with real-time filtering, cutting issue detection time by 35%",
     ],
   },
 ];

@@ -30,7 +30,12 @@ export default function About() {
                 something someone made for you.
               </p>
               <p>
-                I spent several years at Salesforce working across developer
+                I&apos;m currently at{" "}
+                <strong className="font-semibold text-[--text]">
+                  Atlassian
+                </strong>
+                , building frontend features across analytics and prospecting
+                products. Before that, several years at Salesforce — developer
                 tooling, platform infrastructure, and most recently{" "}
                 <strong className="font-semibold text-[--text]">
                   AI-integrated experiences on Einstein Studio
