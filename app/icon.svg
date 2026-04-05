@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Warm cream background -->
+  <rect width="32" height="32" rx="7" fill="#fbf8f4"/>
+  <!-- Left ear -->
+  <polygon points="5,18 10,6 16,14" fill="#c4622d"/>
+  <!-- Right ear -->
+  <polygon points="27,18 22,6 16,14" fill="#c4622d"/>
+  <!-- Head -->
+  <circle cx="16" cy="21" r="10" fill="#c4622d"/>
+  <!-- Left inner ear highlight -->
+  <polygon points="7,17 10,9 14,14" fill="#e8855a" opacity="0.4"/>
+  <!-- Right inner ear highlight -->
+  <polygon points="25,17 22,9 18,14" fill="#e8855a" opacity="0.4"/>
+</svg>
