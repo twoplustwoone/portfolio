@@ -147,19 +147,27 @@ export const currentlyItems: CurrentlyItem[] = [
 // ─── Cat Easter Egg ────────────────────────────────────────
 export const catReviews: CatReview[] = [
   {
-    name: "Loaf",
-    avatar: "🍞",
-    title: "Senior Nap Engineer · Portfolio Critic",
-    stars: "★★★☆☆",
+    name: "Chai",
+    avatar: "🍵",
+    title: "Sovereign of the Top Shelf · Drawer Archaeologist",
+    stars: "★★★★★",
     review:
-      "The hover animations are smooth. He redid them four times. I was trying to sleep on the keyboard for three of those. Three stars. He fed me on time today so I'm being generous.",
+      "Five stars. Obviously. I reviewed this website from my throne atop the wall furniture, which is my domain. He assembled the whole thing while I supervised, occasionally walking across his keyboard to check the code quality. At one point I opened his desk drawer and removed a cable. He called it a bug. I called it a contribution. He kept the chair open for me the entire time. Smart man.",
   },
   {
-    name: "Beans",
-    avatar: "🫘",
-    title: "Lead Chaos Agent · Snack Strategist",
+    name: "Truffle",
+    avatar: "🍫",
+    title: "Chief Noise Officer · Certified Velcro Cat",
+    stars: "★★★☆☆",
+    review:
+      "He built this website over several weeks, during which I meowed at him approximately 4,700 times. He heard maybe twelve. The font choices are nice — I\u2019ll give him that. I carried my spring to his feet as a peace offering on three separate occasions. He said \u201cnot now, buddy.\u201d Three stars. This is what I deal with.",
+  },
+  {
+    name: "Muffin",
+    avatar: "🧁",
+    title: "Head of Security · Bathroom Surveillance Division",
     stars: "★★☆☆☆",
     review:
-      "He spent two hours on a gradient that I immediately walked across. The \"Currently\" section lists gaming before my dinner schedule. Factually incorrect prioritization. Two stars.",
+      "I was promised snacks in exchange for this review. There were no snacks. I have been staring at this website for eleven minutes and I am absolutely famished. There is an entire section called \u2018About\u2019 with no mention of the food bowl situation in this apartment, which I consider a significant editorial failure. Two stars for the design \u2014 it\u2019s warm and I appreciate warmth. I am not a monster. Ekekekekek.",
   },
 ];

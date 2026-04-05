@@ -9,7 +9,8 @@ export default function CatEasterEgg() {
   const [activeCat, setActiveCat] = useState(0);
 
   const cat = catReviews[activeCat];
-  const other = catReviews[1 - activeCat];
+  const nextIndex = (activeCat + 1) % catReviews.length;
+  const next = catReviews[nextIndex];
 
   return (
     <>
@@ -64,10 +65,10 @@ export default function CatEasterEgg() {
 
             {/* Switch cat */}
             <button
-              onClick={() => setActiveCat(1 - activeCat)}
+              onClick={() => setActiveCat(nextIndex)}
               className="text-xs font-semibold text-[--accent] transition-opacity hover:opacity-70"
             >
-              hear from {other.name} instead →
+              hear from {next.name} instead →
             </button>
           </motion.div>
         )}
