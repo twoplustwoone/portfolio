@@ -27,6 +27,14 @@ export const metadata: Metadata = {
     description:
       "Frontend engineer based in NYC. Six-plus years shipping AI-integrated products at Salesforce.",
     type: "website",
+    url: "https://twoplustwoone.dev",
+    siteName: "Francisco Di Giandomenico",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Francisco Di Giandomenico — Frontend Engineer",
+    description:
+      "Frontend engineer based in NYC. Six-plus years shipping AI-integrated products at Salesforce.",
   },
 };
 
