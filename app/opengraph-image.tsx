@@ -8,7 +8,7 @@ export const contentType = "image/png";
 export default async function OGImage() {
   // Fetch DM Serif Display from Google Fonts
   const fontRes = await fetch(
-    "https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"
+    "https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap"
   );
   const css = await fontRes.text();
   const fontUrl = css.match(/url\(([^)]+)\)/)?.[1];
@@ -32,21 +32,19 @@ export default async function OGImage() {
           overflow: "hidden",
         }}
       >
-        {/* Large faint decorative letter */}
+        {/* Large faint cat in the corner */}
         <div
           style={{
             position: "absolute",
-            right: -20,
+            right: 48,
             top: "50%",
             transform: "translateY(-50%)",
-            fontSize: 520,
+            fontSize: 320,
             lineHeight: 1,
-            color: "#c4622d",
-            opacity: 0.05,
-            fontFamily: fontData ? "DM Serif Display" : "serif",
+            opacity: 0.07,
           }}
         >
-          F
+          🐱
         </div>
 
         {/* Terracotta accent bar */}
@@ -67,36 +65,37 @@ export default async function OGImage() {
             color: "#231a17",
             lineHeight: 1.05,
             letterSpacing: "-0.025em",
-            marginBottom: 24,
+            marginBottom: 28,
             fontFamily: fontData ? "DM Serif Display" : "serif",
-            maxWidth: 860,
+            maxWidth: 820,
           }}
         >
           Francisco Di Giandomenico
         </div>
 
-        {/* Role */}
+        {/* Tagline */}
         <div
           style={{
-            fontSize: 30,
-            color: "#c4622d",
-            fontWeight: 700,
-            letterSpacing: "0.08em",
-            textTransform: "uppercase",
-            marginBottom: 56,
-            fontFamily: "sans-serif",
+            fontSize: 26,
+            color: "#6b5a52",
+            fontFamily: fontData ? "DM Serif Display" : "serif",
+            fontStyle: "italic",
+            marginBottom: 52,
+            maxWidth: 700,
+            lineHeight: 1.4,
           }}
         >
-          Frontend Engineer
+          Frontend engineer. Cat dad. Definitely not using a CRA template.
         </div>
 
         {/* URL */}
         <div
           style={{
-            fontSize: 22,
-            color: "#9a7b6e",
+            fontSize: 20,
+            color: "#c4622d",
             fontFamily: "sans-serif",
-            fontWeight: 500,
+            fontWeight: 600,
+            letterSpacing: "0.04em",
           }}
         >
           twoplustwoone.dev
