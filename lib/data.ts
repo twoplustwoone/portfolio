@@ -32,12 +32,12 @@ export const experiences: WorkExperience[] = [
     company: "Atlassian",
     date: "Apr 2025 – Present",
     description:
-      "Building frontend features across Atlassian's analytics and prospecting products — from charting tools to a GraphQL-backed preferences system.",
+      "Leading frontend architecture across Sales360's analytics and prospecting products — from a lead prospecting hub to a GraphQL-backed personalization system.",
     highlights: [
-      "Built a 'create chart from table' feature enabling users to turn data views into dashboard charts",
-      "Refactored chart query logic (SalesQL) to align charts with global filters, eliminating inconsistent time views",
-      "Architected and led migration of a fragmented localStorage preferences system to a centralized, GraphQL-backed package — authored the RFC, designed usePreference hooks, and migrated all preference categories",
-      "Defined frontend architecture for a lead prospecting product using typed view models and data mapping for evolving APIs",
+      "Leading the frontend for the Lead Prospecting Hub — scaffolded the route, typed view-model layer, and anti-corruption data layer, and drove the MVP to dogfooding in ~10 weeks with PM, UX, and backend",
+      "Designed and shipped the Win/Loss Story Builder end-to-end as primary frontend owner — a multi-step tool for reps to document deal outcomes, integrated with Salesforce and Confluence with AI editor support",
+      "Built the Recently Viewed / Recently Searched system as full-stack owner — DB schema, SQS write pipeline, REST API, GraphQL tier, and frontend; the foundation was later reused for the Starred feature",
+      "Authored the Personalization RFC and built the centralized, GraphQL-backed preferences package now used as the standard pattern across the codebase",
     ],
   },
   {
@@ -46,10 +46,10 @@ export const experiences: WorkExperience[] = [
     company: "Salesforce — Einstein Studio",
     date: "Feb 2024 – Dec 2024",
     description:
-      "Built and optimized user-facing features for Einstein Studio, the AI model hub powering Salesforce's generative AI products.",
+      "Built configuration and onboarding experiences for Einstein Studio, the AI model hub powering Salesforce's generative AI products.",
     highlights: [
-      "Built a provider-agnostic LLM layer supporting multiple backends, enabling rapid iteration and increasing engagement by 12%",
-      "Enhanced pagination with lazy loading and responsive design, reducing page load times by 17%",
+      "Built configuration and onboarding UI for Model Builder, letting customers bring their own external LLMs and predictive models into Salesforce products",
+      "Standardized E2E testing across the team — built helper utilities and authored guidance docs that replaced ad-hoc string-based accessors and cut duplication",
     ],
   },
   {
@@ -58,45 +58,24 @@ export const experiences: WorkExperience[] = [
     company: "Capital One",
     date: "Apr 2023 – Jan 2024",
     description:
-      "Redesigned core backend systems with Spring Boot and microservices, improving scalability and deployment reliability.",
+      "Worked on a backend modernization initiative migrating legacy services to serverless Spring Boot microservices on AWS.",
     highlights: [
-      "Refactored legacy systems to Spring Boot microservices on AWS Lambda, reducing costs 25% and capacity 40%",
-      "Engineered API features for secure data tokenization, reducing migration downtime by 15%",
-    ],
-  },
-  {
-    year: "2020",
-    role: "Software Engineer → Senior Software Engineer",
-    company: "Salesforce",
-    date: "Feb 2020 – Mar 2023",
-    description:
-      "Worked across platform infrastructure and developer tooling — automating CI/CD pipelines, improving GraphQL performance, and shipping product improvements at scale.",
-    highlights: [
-      "Automated CI/CD workflows with Jenkins and Node.js, streamlining exports and cutting manual work by 30%",
-      "Improved GraphQL performance via caching, reducing latency 15% and improving responsiveness 16%",
+      "Migrated services from legacy Spring to Spring Boot microservices on AWS Lambda, part of a broader organizational shift to serverless",
+      "Implemented backwards-compatible API features supporting data tokenization during a database migration, minimizing downtime for downstream consumers",
     ],
   },
   {
     year: "2018",
-    role: "Junior Software Engineer",
-    company: "Salesforce",
-    date: "Feb 2018 – Jan 2020",
+    role: "Senior Software Engineer",
+    company: "MuleSoft (a Salesforce company)",
+    date: "Feb 2018 – Mar 2023",
     description:
-      "Started as a junior engineer in Argentina, building reusable UI components and establishing engineering practices within the team.",
+      "Owned MuleSoft's API Console — a Web Components-based shared dependency used by four product teams — over a five-year tenure, promoted from Junior to Senior. Relocated from Argentina to New York along the way.",
     highlights: [
-      "Designed reusable Salesforce UI components with MuleSoft, increasing development speed by 40%",
-      "Introduced a code review process that cut review time by 20% and accelerated deployment cycles",
-    ],
-  },
-  {
-    year: "2017",
-    role: "Software Engineer Intern",
-    company: "MuleSoft",
-    date: "May 2017 – Jan 2018",
-    description:
-      "Interned in Argentina building interactive monitoring dashboards and real-time data filtering tools.",
-    highlights: [
-      "Built interactive monitoring dashboards with real-time filtering, cutting issue detection time by 35%",
+      "Took ownership of API Console after the original maintainer left, recovering it from significant tech debt to a stable, trusted component through bug remediation, regression infrastructure, and UX rework",
+      "Designed a chunked-query architecture for 25–30 MB GraphQL models, reducing request latency by up to 90% on previously-unusable documentation pages",
+      "Led API Console's migration from LitElement to Lightning Web Components, with a build pipeline producing both Salesforce-platform LWC and rollup-bundled OSS LWC from one codebase",
+      "Built a Jenkins-dispatched test runner consolidating suites across 15+ component repositories, catching cross-repo regressions before release",
     ],
   },
 ];
@@ -107,8 +86,8 @@ export const projects: Project[] = [
     icon: "🎁",
     name: "giftpool",
     description:
-      "A platform for creating gifting groups and managing shared wishlists. Built to solve the \u201cwhat do we all get them?\u201d problem \u2014 because coordinating gifts over a group chat is a special kind of chaos.",
-    tech: ["React", "TypeScript", "Node.js"],
+      "A platform for creating gifting groups and managing shared wishlists. Built to solve the \u201cwhat do we all get them?\u201d problem \u2014 because coordinating gifts over a group chat is a special kind of chaos. Live in production with 60+ users.",
+    tech: ["React Router v7", "TypeScript", "Prisma", "Fly.io"],
     url: "https://giftpool.app/",
   },
   {
@@ -123,8 +102,8 @@ export const projects: Project[] = [
 
 export const patent: Patent = {
   number: "US10977011B2",
-  title: "Structuring web apps through",
-  titleLine2: "a specification file",
+  title: "Structured Development for Web",
+  titleLine2: "Application Frameworks",
   description:
     "Wrote, submitted, and received a US patent for a novel approach to structuring web applications declaratively through a specification file. Granted by the USPTO.",
   url: "https://patents.google.com/patent/US10977011B2/en",
@@ -139,8 +118,8 @@ export const quickFacts: QuickFact[] = [
   },
   {
     label: "Education",
-    value: "B.S. Software Engineering",
-    subValue: "Universidad Austral",
+    value: "Software Engineering",
+    subValue: "Universidad Austral · 5-year program",
   },
   { label: "Certified", value: "AWS Certified Cloud Practitioner" },
 ];

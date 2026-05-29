@@ -21,22 +21,22 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Francisco Di Giandomenico — Frontend Engineer",
+  title: "Francisco Di Giandomenico — Senior Frontend Engineer",
   description:
-    "Frontend engineer based in NYC. I build things for people who notice when something feels slightly off.",
+    "Senior frontend engineer based in NYC. I build things for people who notice when something feels slightly off.",
   openGraph: {
-    title: "Francisco Di Giandomenico — Frontend Engineer",
+    title: "Francisco Di Giandomenico — Senior Frontend Engineer",
     description:
-      "Frontend engineer based in NYC. Six-plus years shipping AI-integrated products at Salesforce.",
+      "Senior frontend engineer based in NYC. Years across MuleSoft and Salesforce, most recently AI-integrated experiences on Einstein Studio.",
     type: "website",
     url: "https://twoplustwoone.dev",
     siteName: "Francisco Di Giandomenico",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Francisco Di Giandomenico — Frontend Engineer",
+    title: "Francisco Di Giandomenico — Senior Frontend Engineer",
     description:
-      "Frontend engineer based in NYC. Six-plus years shipping AI-integrated products at Salesforce.",
+      "Senior frontend engineer based in NYC. Years across MuleSoft and Salesforce, most recently AI-integrated experiences on Einstein Studio.",
   },
 };
 

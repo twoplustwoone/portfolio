@@ -24,7 +24,7 @@ export default function Hero() {
 
         {/* Role */}
         <p className="text-xl font-medium tracking-wide text-[--accent]">
-          Frontend Engineer
+          Senior Frontend Engineer
         </p>
 
         {/* Description */}
