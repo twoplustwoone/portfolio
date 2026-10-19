@@ -30,52 +30,52 @@ export const experiences: WorkExperience[] = [
     year: "2025",
     role: "Software Engineer",
     company: "Atlassian",
-    date: "Apr 2025 – Present",
+    date: "Apr 2025 to Present",
     description:
-      "Leading frontend architecture across Sales360's analytics and prospecting products — from a lead prospecting hub to a GraphQL-backed personalization system.",
+      "Frontend and product engineer on Sales360, Atlassian's internal sales platform. Leading the frontend for a new lead prospecting product and building shared features across the stack.",
     highlights: [
-      "Leading the frontend for the Lead Prospecting Hub — scaffolded the route, typed view-model layer, and anti-corruption data layer, and drove the MVP to dogfooding in ~10 weeks with PM, UX, and backend",
-      "Designed and shipped the Win/Loss Story Builder end-to-end as primary frontend owner — a multi-step tool for reps to document deal outcomes, integrated with Salesforce and Confluence with AI editor support",
-      "Built the Recently Viewed / Recently Searched system as full-stack owner — DB schema, SQS write pipeline, REST API, GraphQL tier, and frontend; the foundation was later reused for the Starred feature",
-      "Authored the Personalization RFC and built the centralized, GraphQL-backed preferences package now used as the standard pattern across the codebase",
+      "Lead the frontend for Lead Prospecting Hub, which replaces a third-party prospecting tool (Common Room). Wrote the frontend architecture and the frontend-backend data contract, then led implementation and wrote the tickets other frontend engineers built from. In production with a pilot group of SMB sellers since Aug 2026",
+      "Proposed, designed, and built a Recently Viewed / Recently Searched feature across the stack: database schema, SQS write pipeline consumer, REST endpoints, GraphQL middle tier, and UI. Designed the API to be app-agnostic, and a second product team (Customer360) later adopted it",
+      "Wrote the RFC for Sales360's user preferences system and built its foundation, a typed preferences package with backend persistence that replaces ad-hoc localStorage. It is now the team's standard pattern, and other engineers have extended it across the app",
+      "Built the multi-step frontend for Win/Loss Story Builder, a tool for sales reps to document deal outcomes, with Salesforce integration and export to Confluence",
     ],
   },
   {
     year: "2024",
     role: "Software Engineer",
-    company: "Salesforce — Einstein Studio",
-    date: "Feb 2024 – Dec 2024",
+    company: "Salesforce, Einstein Studio",
+    date: "Feb 2024 to Dec 2024",
     description:
-      "Built configuration and onboarding experiences for Einstein Studio, the AI model hub powering Salesforce's generative AI products.",
+      "Built configuration and onboarding experiences for Einstein Studio, the AI model hub behind Salesforce's generative AI products.",
     highlights: [
       "Built configuration and onboarding UI for Model Builder, letting customers bring their own external LLMs and predictive models into Salesforce products",
-      "Standardized E2E testing across the team — built helper utilities and authored guidance docs that replaced ad-hoc string-based accessors and cut duplication",
+      "Standardized E2E testing across the team. Built helper utilities and wrote guidance docs that replaced ad-hoc string-based accessors and cut duplication",
     ],
   },
   {
     year: "2023",
     role: "Senior Software Engineer",
     company: "Capital One",
-    date: "Apr 2023 – Jan 2024",
+    date: "Apr 2023 to Jan 2024",
     description:
-      "Worked on a backend modernization initiative migrating legacy services to serverless Spring Boot microservices on AWS.",
+      "Worked on a backend modernization initiative that migrated legacy services to serverless Spring Boot microservices on AWS.",
     highlights: [
       "Migrated services from legacy Spring to Spring Boot microservices on AWS Lambda, part of a broader organizational shift to serverless",
-      "Implemented backwards-compatible API features supporting data tokenization during a database migration, minimizing downtime for downstream consumers",
+      "Implemented backwards-compatible API features supporting data tokenization during a database migration",
     ],
   },
   {
-    year: "2018",
+    year: "2017",
     role: "Senior Software Engineer",
     company: "MuleSoft (a Salesforce company)",
-    date: "Feb 2018 – Mar 2023",
+    date: "May 2017 to Mar 2023",
     description:
-      "Owned MuleSoft's API Console — a Web Components-based shared dependency used by four product teams — over a five-year tenure, promoted from Junior to Senior. Relocated from Argentina to New York along the way.",
+      "Owned MuleSoft's API Console, a Web Components-based shared dependency used by four product teams, for nearly six years. Started as an intern and was promoted three times to Senior. Relocated from Argentina to New York along the way.",
     highlights: [
-      "Took ownership of API Console after the original maintainer left, recovering it from significant tech debt to a stable, trusted component through bug remediation, regression infrastructure, and UX rework",
-      "Designed a chunked-query architecture for 25–30 MB GraphQL models, reducing request latency by up to 90% on previously-unusable documentation pages",
-      "Led API Console's migration from LitElement to Lightning Web Components, with a build pipeline producing both Salesforce-platform LWC and rollup-bundled OSS LWC from one codebase",
-      "Built a Jenkins-dispatched test runner consolidating suites across 15+ component repositories, catching cross-repo regressions before release",
+      "Took over API Console and stabilized it through bug fixes, regression test infrastructure, and UX rework. Moved its four consuming teams onto a unified build pipeline",
+      "Designed a chunked-query architecture for GraphQL models of up to 30 MB, making previously unusable documentation pages load",
+      "Led API Console's migration from LitElement to Lightning Web Components, with one codebase producing both a Salesforce-platform build and an open-source bundle for MuleSoft's React apps",
+      "Built a Jenkins-dispatched test runner that ran the suites of 15+ interdependent component repositories together, catching cross-repo regressions before release",
     ],
   },
 ];
@@ -86,7 +86,7 @@ export const projects: Project[] = [
     icon: "🎁",
     name: "giftpool",
     description:
-      "A platform for creating gifting groups and managing shared wishlists. Built to solve the \u201cwhat do we all get them?\u201d problem \u2014 because coordinating gifts over a group chat is a special kind of chaos. Live in production with 60+ users.",
+      "A platform for creating gifting groups and managing shared wishlists. It replaces the \"what do we all get them?\" thread in the group chat. Designed, built, and run solo. Live in production since 2024.",
     tech: ["React Router v7", "TypeScript", "Prisma", "Fly.io"],
     url: "https://giftpool.app/",
   },
@@ -94,34 +94,46 @@ export const projects: Project[] = [
     icon: "🧾",
     name: "splittr",
     description:
-      "A lightweight web app for itemizing invoices with proportional tax splitting. Because splitting the check shouldn't require a math degree or a spreadsheet at the table.",
+      "A lightweight web app for itemizing invoices with proportional tax splitting. It saves you the math and the spreadsheet when splitting the check at the table.",
     tech: ["React", "JavaScript", "SCSS"],
     url: "https://splittr.twoplustwoone.dev/",
   },
 ];
 
-export const patent: Patent = {
-  number: "US10977011B2",
-  title: "Structured Development for Web",
-  titleLine2: "Application Frameworks",
-  description:
-    "Wrote, submitted, and received a US patent for a novel approach to structuring web applications declaratively through a specification file. Granted by the USPTO.",
-  url: "https://patents.google.com/patent/US10977011B2/en",
-};
+export const patents: Patent[] = [
+  {
+    number: "US10977011B2",
+    label: "US Patent No.",
+    title: "Structured Development for Web",
+    titleLine2: "Application Frameworks",
+    description:
+      "Sole inventor. A development tool that analyzes a web application's component specification, breaks it down into its functional parts, and revises it to remove redundant components and reuse existing ones. Granted by the USPTO in 2021.",
+    url: "https://patents.google.com/patent/US10977011B2/en",
+  },
+  {
+    number: "US20250272425A1",
+    label: "US Patent Application No.",
+    title: "API Consumption",
+    titleLine2: "(patent pending)",
+    description:
+      "Co-inventor. An API portal that manages a catalog of APIs from multiple sources, controls which users can access which APIs, supports a customizable portal layout, and generates logs and metrics for each API.",
+    url: "https://patents.google.com/patent/US20250272425A1/en",
+  },
+];
 
 // ─── About ─────────────────────────────────────────────────
 export const quickFacts: QuickFact[] = [
   {
     label: "Based in",
     value: "New York City",
-    subValue: "emotionally in Buenos Aires",
+    subValue: "Seattle-bound in early 2027 · emotionally in Buenos Aires",
   },
   {
     label: "Education",
     value: "Software Engineering",
     subValue: "Universidad Austral · 5-year program",
   },
-  { label: "Certified", value: "AWS Certified Cloud Practitioner" },
+  { label: "Patents", value: "1 granted · 1 pending" },
 ];
 
 export const currentlyItems: CurrentlyItem[] = [
@@ -151,7 +163,7 @@ export const catReviews: CatReview[] = [
     title: "Sovereign of the Top Shelf · Drawer Archaeologist",
     stars: "★★★★★",
     review:
-      "Smooth. Fast. Warm color palette \u2014 finally, a man who understands that orange is the superior color. Five stars. I supervised the entire build from above, which is the only correct vantage point.",
+      "Smooth. Fast. Warm color palette. Finally, a man who understands that orange is the superior color. Five stars. I supervised the entire build from above, which is the only correct place to watch from.",
   },
   {
     name: "Truffle",
@@ -159,7 +171,7 @@ export const catReviews: CatReview[] = [
     title: "Chief Noise Officer · Certified Velcro Cat",
     stars: "★★★☆☆",
     review:
-      "I voiced 47 concerns during development. He addressed zero of them. The site is fine. The \u2018Currently\u2019 section doesn\u2019t mention me once, which is an oversight I\u2019ll be vocalizing for the foreseeable future.",
+      "I voiced 47 concerns during development. He addressed zero of them. The site is fine. The 'Currently' section doesn't mention me once, which is an oversight I'll be vocalizing for the foreseeable future.",
   },
   {
     name: "Muffin",
@@ -167,6 +179,6 @@ export const catReviews: CatReview[] = [
     title: "Head of Security · Bathroom Surveillance Division",
     stars: "★★☆☆☆",
     review:
-      "There is an entire \u2018About\u2019 section with no mention of the food bowl situation in this apartment. Two stars. The design is warm, which I respect. I am not a monster.",
+      "There is an entire 'About' section with no mention of the food bowl situation in this apartment. Two stars. The design is warm, which I respect. I am not a monster.",
   },
 ];

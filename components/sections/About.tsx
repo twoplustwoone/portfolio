@@ -12,7 +12,7 @@ export default function About() {
           About me
         </p>
         <h2 className="mb-12 font-serif text-[clamp(2rem,3.5vw,3rem)] tracking-[-0.02em]">
-          Hi — I&apos;m Francisco.
+          Hi, I&apos;m Francisco.
         </h2>
 
         <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-[1.5fr_1fr] lg:gap-20">
@@ -24,8 +24,7 @@ export default function About() {
                 <strong className="font-semibold text-[--text]">
                   software engineer based in New York City
                 </strong>
-                , originally from Buenos Aires. I care about the intersection of
-                engineering and human experience — specifically the part where a
+                , moving to Seattle in early 2027, and originally from Buenos Aires. I care about the point where a
                 product stops feeling like a product and starts feeling like
                 something someone made for you.
               </p>
@@ -34,26 +33,26 @@ export default function About() {
                 <strong className="font-semibold text-[--text]">
                   Atlassian
                 </strong>
-                , building frontend features across analytics and prospecting
-                products. Before that, several years at Salesforce — developer
+                , leading the frontend for a new prospecting product on
+                Sales360, our internal sales platform. Before that, I spent several years at Salesforce on developer
                 tooling, platform infrastructure, and most recently{" "}
                 <strong className="font-semibold text-[--text]">
                   AI-integrated experiences on Einstein Studio
-                </strong>{" "}
-                — shipping LLM integrations and performance improvements that
-                moved real metrics. I also hold a{" "}
+                </strong>
+                , where I built the UI that lets customers connect their own LLMs to
+                Salesforce. I also hold a{" "}
                 <strong className="font-semibold text-[--text]">
                   US patent
                 </strong>{" "}
-                for a system I designed, which still catches me off-guard a
+                for a system I designed (plus a second, pending one), which still catches me off-guard a
                 little when I say it out loud.
               </p>
               <p>
                 Outside of work I&apos;m an{" "}
                 <strong className="font-semibold text-[--text]">
                   avid gamer
-                </strong>{" "}
-                — specifically the kind of games that have mood and character and
+                </strong>
+                , specifically the kind of games that have mood and character and
                 make you feel like you&apos;re somewhere. I write when something
                 is bothering me creatively. I make unnecessarily elaborate
                 coffee. And I&apos;m governed, at least partially, by two very

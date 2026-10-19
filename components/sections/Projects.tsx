@@ -1,6 +1,6 @@
 import { ExternalLink, Award } from "lucide-react";
 import { RevealOnScroll } from "@/components/ui/RevealOnScroll";
-import { projects, patent } from "@/lib/data";
+import { projects, patents } from "@/lib/data";
 
 export default function Projects() {
   return (
@@ -54,37 +54,41 @@ export default function Projects() {
           ))}
         </div>
 
-        {/* Patent callout */}
-        <RevealOnScroll>
-          <div className="relative flex flex-col gap-6 overflow-hidden rounded-3xl bg-gradient-to-br from-[#C4622D] to-[#9B4420] p-8 text-white lg:flex-row lg:items-center lg:justify-between lg:gap-8 lg:p-10">
-            <span className="pointer-events-none absolute right-44 top-1/2 -translate-y-1/2 text-[8rem] opacity-[0.06] select-none">
-              ⚖
-            </span>
-            <div>
-              <p className="mb-2 flex items-center gap-1.5 text-[0.7rem] font-bold uppercase tracking-[0.14em] opacity-70">
-                <Award className="h-3.5 w-3.5" />
-                US Patent No. {patent.number}
-              </p>
-              <h3 className="mb-3 font-serif text-[1.8rem] leading-[1.15] tracking-[-0.02em]">
-                {patent.title}
-                <br />
-                {patent.titleLine2}
-              </h3>
-              <p className="max-w-[580px] text-[0.9375rem] leading-relaxed opacity-80">
-                {patent.description}
-              </p>
+        {/* Patent callouts */}
+        <div className="flex flex-col gap-6">
+          {patents.map((patent) => (
+          <RevealOnScroll key={patent.number}>
+            <div className="relative flex flex-col gap-6 overflow-hidden rounded-3xl bg-gradient-to-br from-[#C4622D] to-[#9B4420] p-8 text-white lg:flex-row lg:items-center lg:justify-between lg:gap-8 lg:p-10">
+              <span className="pointer-events-none absolute right-44 top-1/2 -translate-y-1/2 text-[8rem] opacity-[0.06] select-none">
+                ⚖
+              </span>
+              <div>
+                <p className="mb-2 flex items-center gap-1.5 text-[0.7rem] font-bold uppercase tracking-[0.14em] opacity-70">
+                  <Award className="h-3.5 w-3.5" />
+                  {patent.label} {patent.number}
+                </p>
+                <h3 className="mb-3 font-serif text-[1.8rem] leading-[1.15] tracking-[-0.02em]">
+                  {patent.title}
+                  <br />
+                  {patent.titleLine2}
+                </h3>
+                <p className="max-w-[580px] text-[0.9375rem] leading-relaxed opacity-80">
+                  {patent.description}
+                </p>
+              </div>
+              <a
+                href={patent.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex w-fit flex-shrink-0 items-center gap-1.5 rounded-full bg-white px-7 py-3 text-sm font-bold text-[--accent] shadow-[0_2px_12px_rgba(0,0,0,0.15)] transition-all duration-200 hover:scale-[1.04] hover:shadow-[0_6px_20px_rgba(0,0,0,0.2)]"
+              >
+                View Patent
+                <ExternalLink className="h-3.5 w-3.5" />
+              </a>
             </div>
-            <a
-              href={patent.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex w-fit flex-shrink-0 items-center gap-1.5 rounded-full bg-white px-7 py-3 text-sm font-bold text-[--accent] shadow-[0_2px_12px_rgba(0,0,0,0.15)] transition-all duration-200 hover:scale-[1.04] hover:shadow-[0_6px_20px_rgba(0,0,0,0.2)]"
-            >
-              View Patent
-              <ExternalLink className="h-3.5 w-3.5" />
-            </a>
-          </div>
-        </RevealOnScroll>
+          </RevealOnScroll>
+          ))}
+        </div>
       </div>
     </section>
   );

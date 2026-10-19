@@ -15,13 +15,13 @@ export default function Contact() {
               Get in touch
             </h2>
             <p className="mb-3 text-[1.05rem] leading-[1.75] text-[--text-muted]">
-              If you&apos;re building something you actually care about — not
-              just something optimized — my inbox is open. I&apos;m especially
-              drawn to work at the intersection of frontend craft and AI product
+              If you&apos;re building something you care about, not something
+              merely optimized, my inbox is open. I&apos;m especially
+              drawn to work where frontend craft meets AI product
               development.
             </p>
             <p className="mb-10 text-sm italic text-[--text-muted] opacity-80">
-              Also: good taste matters to me more than I can rationally justify.
+              Also, good taste matters to me more than I can rationally justify.
               Fair warning.
             </p>
             <a

@@ -9,12 +9,6 @@ export default function Hero() {
     <section className="mx-auto grid min-h-screen max-w-[1280px] grid-cols-1 items-center gap-8 px-6 pb-16 pt-28 lg:grid-cols-[1.1fr_0.9fr] lg:gap-12 lg:px-16 lg:pt-36">
       {/* ── Content ── */}
       <div className="flex flex-col gap-6">
-        {/* Availability badge */}
-        <span className="inline-flex w-fit items-center gap-2 rounded-full border border-green-200 bg-green-50 px-3.5 py-1.5 text-xs font-semibold text-green-800">
-          <span className="h-1.5 w-1.5 animate-pulse-dot rounded-full bg-green-500" />
-          Open to new opportunities
-        </span>
-
         {/* Name */}
         <h1 className="font-serif text-[clamp(3rem,5.5vw,5.25rem)] leading-[1.02] tracking-[-0.025em]">
           Francisco
@@ -24,14 +18,14 @@ export default function Hero() {
 
         {/* Role */}
         <p className="text-xl font-medium tracking-wide text-[--accent]">
-          Senior Frontend Engineer
+          Frontend &amp; Product Engineer
         </p>
 
         {/* Description */}
         <p className="max-w-[520px] text-[1.05rem] leading-[1.75] text-[--text-muted]">
           I build things for people who notice when something feels slightly
-          off. Currently at Atlassian — six-plus years at Salesforce before
-          that, a US patent somewhere along the way — I&apos;ve learned that
+          off. Currently at Atlassian, with six-plus years at Salesforce before
+          that and a US patent somewhere along the way. I&apos;ve learned that
           good software doesn&apos;t just work. It has to{" "}
           <em>feel like something.</em>
         </p>

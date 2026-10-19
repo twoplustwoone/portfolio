@@ -23,6 +23,7 @@ export interface Project {
 
 export interface Patent {
   number: string;
+  label: string;
   title: string;
   titleLine2: string;
   description: string;
